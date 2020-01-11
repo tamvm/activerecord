@@ -722,7 +722,7 @@ module ActiveRecord
           self.schema_search_path = @config[:schema_search_path] || @config[:schema_order]
 
           # Use standard-conforming strings so we don't have to do the E'...' dance.
-          set_standard_conforming_strings
+          # set_standard_conforming_strings
 
           # If using Active Record's time zone support configure the connection to return
           # TIMESTAMP WITH ZONE types in UTC.

@@ -1,4 +1,4 @@
-version = File.read(File.expand_path("../../RAILS_VERSION", __FILE__)).strip
+version = "5.1.7"
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
@@ -20,11 +20,6 @@ Gem::Specification.new do |s|
 
   s.extra_rdoc_files = %w(README.rdoc)
   s.rdoc_options.concat ["--main",  "README.rdoc"]
-
-  s.metadata = {
-    "source_code_uri" => "https://github.com/rails/rails/tree/v#{version}/activerecord",
-    "changelog_uri"   => "https://github.com/rails/rails/blob/v#{version}/activerecord/CHANGELOG.md"
-  }
 
   s.add_dependency "activesupport", version
   s.add_dependency "activemodel",   version
